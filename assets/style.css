@@ -92,6 +92,9 @@ button:hover{
 }
 
 .location {
+    background-image: url("/assets/ddassets/beach-calm-clouds-idyllic-457882.jpg");
+    background-position: center;
+    background-size: cover;
     height: 450px;
     display: flex;
     flex-direction: column;
