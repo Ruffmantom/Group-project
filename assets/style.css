@@ -35,6 +35,9 @@ nav{
 
 /* ********************** search section ****************************** */
 .serch-section{
+    background-image: url("/assets/ddassets/daylight-environment-forest-idyllic-459225.jpg");
+    background-position: center;
+    background-size: cover;
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -57,7 +60,7 @@ h4{
 }
 input{
     color: white;
-    background-color: darkgray;
+    background-color:#41cbcc;
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     width: 35%;
@@ -68,15 +71,46 @@ input{
 ::placeholder {
     color:white;
     opacity: 1;
+    text-align: center;
+
   }
 button{
     color: white;
-    background-color: darkgray;
+    background-color: #41cbcc;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     width: 35%;
     height: 40px;
     border-radius: 3px;
+    border: none;
+}
+
+input:hover {
+    background-color: darkgrey;
+}
+
+button:hover{
+    background-color: darkgrey;
+}
+
+.location {
+    background-image: url("/assets/ddassets/beach-calm-clouds-idyllic-457882.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: center 
+}
+/******************************* WEATHER SECTION ****************************/
+.weather {
+    background-image: url("/assets/ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: center      
 }
 
 /* ********************** appended items when user clicks ****************************** */
