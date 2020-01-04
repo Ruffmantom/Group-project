@@ -14,9 +14,9 @@ font-family: 'Raleway', sans-serif;
 nav{
     display: flex;
     background-image: url('/assets/ddassets/navbar.png');
-    border-bottom: 3px solid black;
+    border: 15px solid whitesmoke;
     height: 110px;
-    width:100%;
+    width: auto;
 }
 .nav-logo{
     margin: auto;
@@ -26,6 +26,9 @@ nav{
     /* margin-top: 110px; */
     height: 510px;
     background-image: url('/assets/ddassets/landing.png');
+    border-right: 15px solid  whitesmoke;
+    border-left: 15px solid  whitesmoke;
+    border-bottom: 15px solid whitesmoke;
     display: flex;
   }
 #hero-logo{
@@ -35,12 +38,15 @@ nav{
 
 /* ********************** search section ****************************** */
 .serch-section{
-    background-image: url("/assets/ddassets/daylight-environment-forest-idyllic-459225.jpg");
+    background-image: url("/assets/ddassets/light-landscape-nature-red-33041.jpg");
     background-position: center;
     background-size: cover;
     height: 450px;
     display: flex;
     flex-direction: column;
+    border-right: 15px solid  whitesmoke;
+    border-left: 15px solid  whitesmoke;
+    border-bottom: 15px solid whitesmoke;
     text-align: center;
     /* background-color: chartreuse; */
 }
@@ -52,17 +58,20 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     margin: 30px;
+    color: white;
 }
 h4{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     margin: 30px;
+    color: white;
 }
 input{
     color: white;
     background-color:#41cbcc;
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
+    text-align: center;
     width: 35%;
     height: 40px;
     border: none;
@@ -93,6 +102,8 @@ button:hover{
     background-color: darkgrey;
 }
 
+/* ********************LOCATION SECTION************************************ */
+
 .location {
     background-image: url("/assets/ddassets/beach-calm-clouds-idyllic-457882.jpg");
     background-position: center;
@@ -100,8 +111,17 @@ button:hover{
     height: 450px;
     display: flex;
     flex-direction: column;
-    text-align: center 
+    border-right: 15px solid  whitesmoke;
+    border-left: 15px solid  whitesmoke;
+    border-bottom: 15px solid whitesmoke;
+    text-align: center   
 }
+
+#locationText {
+    color: white;
+}
+
+
 /******************************* WEATHER SECTION ****************************/
 .weather {
     background-image: url("/assets/ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
@@ -110,7 +130,14 @@ button:hover{
     height: 450px;
     display: flex;
     flex-direction: column;
+    border-right: 15px solid whitesmoke;
+    border-left: 15px solid  whitesmoke;
+    border-bottom: 15px solid whitesmoke;
     text-align: center      
+}
+
+#weatherText {
+    color: white;
 }
 
 /* ********************** appended items when user clicks ****************************** */
@@ -120,7 +147,7 @@ button:hover{
 /* ********************** footer ****************************** */
 footer{
     height: 110px;
-    background-color: darkgray;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
 }
