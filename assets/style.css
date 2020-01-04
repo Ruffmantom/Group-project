@@ -41,7 +41,6 @@ nav{
     height: 450px;
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
     text-align: center;
     /* background-color: chartreuse; */
 }
@@ -101,7 +100,6 @@ button:hover{
     height: 450px;
     display: flex;
     flex-direction: column;
-    border: 2px solid purple;
     text-align: center 
 }
 /******************************* WEATHER SECTION ****************************/
@@ -112,7 +110,6 @@ button:hover{
     height: 450px;
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
     text-align: center      
 }
 
