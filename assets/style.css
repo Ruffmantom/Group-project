@@ -75,13 +75,19 @@ button{
     color: white;
     background-color: #41cbcc;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     width: 35%;
     height: 40px;
     border-radius: 3px;
-    border: 2px solid #41cbcc;
+    border: none;
+}
 
+input:hover {
+    background-color: darkgrey;
+}
 
+button:hover{
+    background-color: darkgrey;
 }
 
 /* ********************** appended items when user clicks ****************************** */
