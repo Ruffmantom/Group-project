@@ -38,6 +38,7 @@ nav{
     height: 450px;
     display: flex;
     flex-direction: column;
+    border: 2px solid blue;
     text-align: center;
     /* background-color: chartreuse; */
 }
@@ -88,6 +89,22 @@ input:hover {
 
 button:hover{
     background-color: darkgrey;
+}
+
+.location {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid purple;
+    text-align: center 
+}
+/******************************* WEATHER SECTION ****************************/
+.weather {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+        text-align: center      
 }
 
 /* ********************** appended items when user clicks ****************************** */
