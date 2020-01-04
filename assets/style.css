@@ -35,6 +35,9 @@ nav{
 
 /* ********************** search section ****************************** */
 .serch-section{
+    background-image: url("/assets/ddassets/daylight-environment-forest-idyllic-459225.jpg");
+    background-position: center;
+    background-size: cover;
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -103,11 +106,14 @@ button:hover{
 }
 /******************************* WEATHER SECTION ****************************/
 .weather {
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        border: 2px solid red;
-        text-align: center      
+    background-image: url("/assets/ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    text-align: center      
 }
 
 /* ********************** appended items when user clicks ****************************** */
