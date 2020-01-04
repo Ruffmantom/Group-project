@@ -1,0 +1,101 @@
+/*_____________________ body and html styles __________________________ */
+body{
+
+}
+html{
+
+}
+/* Fonts
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/* ********************** Nav Bar ****************************** */
+nav{
+    display: flex;
+    background-image: url('/assets/ddassets/navbar.png');
+    border-bottom: 3px solid black;
+    height: 110px;
+    width:100%;
+}
+.nav-logo{
+    margin: auto;
+}
+/* ********************** Hero w/ logo ****************************** */
+.hero{
+    /* margin-top: 110px; */
+    height: 510px;
+    background-image: url('/assets/ddassets/landing.png');
+    display: flex;
+  }
+#hero-logo{
+    margin: auto;
+    width:80%;
+}
+
+/* ********************** search section ****************************** */
+.serch-section{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: chartreuse; */
+}
+.serch-container{
+    margin: auto;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 30px;
+}
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 30px;
+}
+input{
+    color: white;
+    background-color: darkgray;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    width: 35%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+}
+::placeholder {
+    color:white;
+    opacity: 1;
+  }
+button{
+    color: white;
+    background-color: darkgray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 35%;
+    height: 40px;
+    border-radius: 3px;
+}
+
+/* ********************** appended items when user clicks ****************************** */
+
+
+
+/* ********************** footer ****************************** */
+footer{
+    height: 110px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo{
+    margin: auto;
+    
+}
+.foot-logo{
+    height: 75px;
+}
+
+/* ********************** mobile ****************************** */
