@@ -57,7 +57,7 @@ h4{
 }
 input{
     color: white;
-    background-color: darkgray;
+    background-color:#41cbcc;
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     width: 35%;
@@ -68,15 +68,20 @@ input{
 ::placeholder {
     color:white;
     opacity: 1;
+    text-align: center;
+
   }
 button{
     color: white;
-    background-color: darkgray;
+    background-color: #41cbcc;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     width: 35%;
     height: 40px;
     border-radius: 3px;
+    border: 2px solid #41cbcc;
+
+
 }
 
 /* ********************** appended items when user clicks ****************************** */
