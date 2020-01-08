@@ -140,6 +140,20 @@ button:hover{
     color: white;
 }
 
+#clock{
+    width: 350px;
+    height: 100px;
+    margin: auto;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+
 /* ********************** appended items when user clicks ****************************** */
 
 
