@@ -111,7 +111,6 @@ button:hover{
     height: 450px;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     border-right: 15px solid whitesmoke;
     border-left: 15px solid  whitesmoke;
     border-bottom: 15px solid whitesmoke;
@@ -128,7 +127,6 @@ button:hover{
     color: black;
     font-weight: bold;
     font-size: large;
-=======
     text-align: center;
 }
 .locContainer{
@@ -144,7 +142,6 @@ button:hover{
     width: 40% ;
     margin: auto;
     
->>>>>>> edca5252bf865d602de4e341fa0cc10acd8fb8de
 }
 
 /******************************* WEATHER SECTION ****************************/
@@ -164,7 +161,6 @@ button:hover{
 #weatherText {
     color: white;
 }
-<<<<<<< HEAD
 
 #clock{
     width: 350px;
@@ -179,8 +175,7 @@ button:hover{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5em;
     font-weight: bold;
-
-=======
+}
 #weatherContainer {
     height: 60%;
     width: 80%;
@@ -226,7 +221,6 @@ button:hover{
     border-radius: 20px;
     margin-left: 5px;
 }
->>>>>>> edca5252bf865d602de4e341fa0cc10acd8fb8de
 /* ********************** appended items when user clicks ****************************** */
 
 
