@@ -2,6 +2,7 @@ $("#searchError").hide();
 
 var introText = $(".introText");
 var locName = $('.locName');
+var locImage = $('.getImage');
 
 function makeHtml(res) {
     // console.log(res.results[0].intro);
@@ -15,7 +16,10 @@ function makeHtml(res) {
     // console.log(res.results[0].name);
     var locationName = res.results[0].name;
     locName.text(locationName);
-
+    // console.log('getting image')
+    // console.log(res.results[0].images[Math.floor(Math.random()) * 10].source_url)
+    var searchImg = res.results[0].images[Math.floor(Math.random() * 10) + 1].source_url;
+    locImage.attr('src', searchImg)
 
 }
 
@@ -130,6 +134,7 @@ $(document).ready(function () {
             weatherApp3();
             weatherApp4();
             weatherApp5();
+
 
 
 
