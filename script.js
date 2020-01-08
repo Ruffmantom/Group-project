@@ -1,3 +1,19 @@
+var introText = $(".introText");
+var locName = $('.locName');
+
+function makeHtml(res) {
+    // console.log(res.results[0].intro);
+    // making a intro var from the response that is given from the ajax call
+    var intro = res.results[0].intro;
+    // appending it to the html
+    introText.text(intro);
+    //grabing the title
+    // console.log(res.results[0].name);
+    var locationName = res.results[0].name;
+    locName.text(locationName);
+
+}
+
 $(document).ready(function () {
     console.log('issss ready');
 
@@ -52,7 +68,7 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response);
             //// this is where the fun is ////
-
+            makeHtml(response);
 
 
         })
@@ -75,6 +91,7 @@ $(document).ready(function () {
         console.log('You clicked the submit button or enter')
         theSearch1();
         theSearch2();
+
     });
 
     /////
