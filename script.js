@@ -31,7 +31,7 @@ $(document).ready(function () {
         }).then(function (res) {
             console.log(res);
             //// this is where the fun is ////
-            
+
 
 
 
@@ -109,3 +109,5 @@ $(document).ready(function () {
 
 
 })
+
+moment().format('MMMM Do YYYY, h:mm:ss a');

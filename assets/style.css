@@ -13,14 +13,43 @@ font-family: 'Raleway', sans-serif;
 /* ********************** Nav Bar ****************************** */
 nav{
     display: flex;
+    flex-direction: column;
     background-image: url('/assets/ddassets/navbar.png');
     border: 15px solid whitesmoke;
     height: 110px;
     width: auto;
 }
-.nav-logo{
-    margin: auto;
+
+.nav-logo {
+    margin: 2px;
+    height: 75px;
+    margin: 0 auto;
+    padding-top: 5px;
 }
+
+.navImage {
+    display: flex;
+  
+}
+
+.navClock{
+    height: 5px;
+}
+
+#clock{
+    padding-top: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+
 /* ********************** Hero w/ logo ****************************** */
 .hero{
     /* margin-top: 110px; */
@@ -127,6 +156,21 @@ button:hover{
     color: black;
     font-weight: bold;
     font-size: large;
+    text-align: center;
+}
+.locContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+.intro{
+    width: 40%;
+    margin: auto;
+    
+}
+.imageSpot{
+    width: 40% ;
+    margin: auto;
+    
 }
 
 /******************************* WEATHER SECTION ****************************/
@@ -147,21 +191,51 @@ button:hover{
     color: white;
 }
 
-#clock{
-    width: 350px;
-    height: 100px;
+#weatherContainer {
+    height: 60%;
+    width: 80%;
     margin: auto;
-    background-color: black;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
 }
-
+#weatherBox1 {
+    background-color: grey;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+#weatherBox2 {
+    background-color: blue;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+#weatherBox3 {
+    background-color: red;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+#weatherBox4 {
+    background-color: yellow;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+#weatherBox5 {
+    background-color: pink;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
 /* ********************** appended items when user clicks ****************************** */
 
 
