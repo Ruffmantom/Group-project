@@ -1,10 +1,16 @@
 /*_____________________ body and html styles __________________________ */
 body{
-
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 30px;
+    color: white;
 }
+
 html{
 
+
 }
+
 /* Fonts
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif;
@@ -60,6 +66,7 @@ nav{
     border-bottom: 15px solid whitesmoke;
     display: flex;
   }
+
 #hero-logo{
     margin: auto;
     width:80%;
@@ -141,9 +148,10 @@ button:hover{
 /* ********************LOCATION SECTION************************************ */
 
 .location {
-    background-image: url("/assets/ddassets/beach-calm-clouds-idyllic-457882.jpg");
+    background-image: url("/assets/ddassets/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg");
     background-position: center;
     background-size: cover;
+    background-color: whitesmoke;
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -154,13 +162,13 @@ button:hover{
 }
 
 .locName {
-    color: black;
+    color: white;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .introText {
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: large;
     text-align: center;
