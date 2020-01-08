@@ -131,11 +131,12 @@ button:hover{
     background-color: darkgrey;
 }
 #searchError {
-    background-color: red;
-    border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    margin: auto;
+    background-color: rgba(255, 0, 0, 0.575);
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+    width: 35%;
+    margin: 10px auto 10px auto;
 }
 
 /* ********************LOCATION SECTION************************************ */

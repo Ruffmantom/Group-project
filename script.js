@@ -178,7 +178,7 @@ $(document).ready(function () {
                 console.log("no results")
                 //jquery to tell frontend that there are not results
                 $("#searchError").show();
-                $("#searchError").text("Try a bigger city xD")
+                // $("#searchError").text("Try a bigger city xD")
                 return
             }
             $("#searchError").hide();
