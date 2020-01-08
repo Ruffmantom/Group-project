@@ -111,6 +111,7 @@ button:hover{
     height: 450px;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     border-right: 15px solid whitesmoke;
     border-left: 15px solid  whitesmoke;
     border-bottom: 15px solid whitesmoke;
@@ -127,8 +128,24 @@ button:hover{
     color: black;
     font-weight: bold;
     font-size: large;
+=======
+    text-align: center;
 }
-
+.locContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+.intro{
+    width: 40%;
+    margin: auto;
+    
+}
+.imageSpot{
+    width: 40% ;
+    margin: auto;
+    
+>>>>>>> edca5252bf865d602de4e341fa0cc10acd8fb8de
+}
 
 /******************************* WEATHER SECTION ****************************/
 .weather {
@@ -147,6 +164,7 @@ button:hover{
 #weatherText {
     color: white;
 }
+<<<<<<< HEAD
 
 #clock{
     width: 350px;
@@ -162,6 +180,53 @@ button:hover{
     font-size: 1.5em;
     font-weight: bold;
 
+=======
+#weatherContainer {
+    height: 60%;
+    width: 80%;
+    margin: auto;
+}
+#weatherBox1 {
+    background-color: grey;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+#weatherBox2 {
+    background-color: blue;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+#weatherBox3 {
+    background-color: red;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+#weatherBox4 {
+    background-color: yellow;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+#weatherBox5 {
+    background-color: pink;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+>>>>>>> edca5252bf865d602de4e341fa0cc10acd8fb8de
 /* ********************** appended items when user clicks ****************************** */
 
 

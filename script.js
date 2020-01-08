@@ -12,6 +12,7 @@ function makeHtml(res) {
     var locationName = res.results[0].name;
     locName.text(locationName);
 
+
 }
 
 $(document).ready(function () {
@@ -30,7 +31,7 @@ $(document).ready(function () {
         }).then(function (res) {
             console.log(res);
             //// this is where the fun is ////
-
+            
 
 
 
