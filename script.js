@@ -30,7 +30,7 @@ $(document).ready(function () {
         }).then(function (res) {
             console.log(res);
             //// this is where the fun is ////
-
+            
 
 
 

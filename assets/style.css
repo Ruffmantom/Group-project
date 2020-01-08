@@ -143,7 +143,51 @@ button:hover{
 #weatherText {
     color: white;
 }
-
+#weatherContainer {
+    height: 60%;
+    width: 80%;
+    margin: auto;
+}
+#weatherBox1 {
+    background-color: grey;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+#weatherBox2 {
+    background-color: blue;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+#weatherBox3 {
+    background-color: red;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+#weatherBox4 {
+    background-color: yellow;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+#weatherBox5 {
+    background-color: pink;
+    height: 100%;
+    width: 18%;
+    float: left;
+    border-radius: 20px;
+    margin-left: 5px;
+}
 /* ********************** appended items when user clicks ****************************** */
 
 
