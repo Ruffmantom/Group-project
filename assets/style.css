@@ -111,20 +111,22 @@ button:hover{
     height: 450px;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     text-align: center;
-=======
-    border-right: 15px solid  whitesmoke;
-    border-left: 15px solid  whitesmoke;
-    border-bottom: 15px solid whitesmoke;
-    text-align: center   
 }
-
-#locationText {
-    color: white;
->>>>>>> e11e3b480fd15d864c3082aea78524526b31ba46
+.locContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.233);
 }
-
+.intro{
+    width: 40%;
+    margin: auto;
+    
+}
+.imageSpot{
+    width: 40% ;
+    margin: auto;
+    
+}
 
 /******************************* WEATHER SECTION ****************************/
 .weather {
