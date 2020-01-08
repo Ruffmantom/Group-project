@@ -1,10 +1,14 @@
+$("#searchError").hide();
+
 var introText = $(".introText");
 var locName = $('.locName');
 
 function makeHtml(res) {
     // console.log(res.results[0].intro);
     // making a intro var from the response that is given from the ajax call
+
     var intro = res.results[0].intro;
+    // console.log(res)
     // appending it to the html
     introText.text(intro);
     //grabing the title
@@ -28,39 +32,39 @@ $(document).ready(function () {
             url: queryURL,
             method: "GET"
 
-        }).then(function (res) {
-            console.log(res);
+        }).then(function (res1) {
+            console.log(res1);
             //// this is where the fun is ////
-            var date1 = (res.list[5].dt_txt).split("-").join("/");
-            var date2 = (res.list[13].dt_txt).split("-").join("/");
-            var date3 = (res.list[21].dt_txt).split("-").join("/");
-            var date4 = (res.list[29].dt_txt).split("-").join("/");
-            var date5 = (res.list[37].dt_txt).split("-").join("/");
+            var date1 = (res1.list[2].dt_txt).split("-").join("/");
+            var date2 = (res1.list[10].dt_txt).split("-").join("/");
+            var date3 = (res1.list[18].dt_txt).split("-").join("/");
+            var date4 = (res1.list[26].dt_txt).split("-").join("/");
+            var date5 = (res1.list[34].dt_txt).split("-").join("/");
 
-            var temp1 = (res.list[5].main.temp_max + '°F');
-            var temp2 = (res.list[13].main.temp_max + '°F');
-            var temp3 = (res.list[21].main.temp_max + '°F');
-            var temp4 = (res.list[29].main.temp_max + '°F');
-            var temp5 = (res.list[37].main.temp_max + '°F');
+            var temp1 = (res1.list[2].main.temp_max + '°F');
+            var temp2 = (res1.list[10].main.temp_max + '°F');
+            var temp3 = (res1.list[18].main.temp_max + '°F');
+            var temp4 = (res1.list[26].main.temp_max + '°F');
+            var temp5 = (res1.list[34].main.temp_max + '°F');
 
-            var humid1 = ('Humidity ' + res.list[5].main.humidity + '%');
-            var humid2 = ('Humidity ' + res.list[13].main.humidity + '%');
-            var humid3 = ('Humidity ' + res.list[21].main.humidity + '%');
-            var humid4 = ('Humidity ' + res.list[29].main.humidity + '%');
-            var humid5 = ('Humidity ' + res.list[37].main.humidity + '%');
+            var humid1 = ('Humidity ' + res1.list[2].main.humidity + '%');
+            var humid2 = ('Humidity ' + res1.list[10].main.humidity + '%');
+            var humid3 = ('Humidity ' + res1.list[18].main.humidity + '%');
+            var humid4 = ('Humidity ' + res1.list[26].main.humidity + '%');
+            var humid5 = ('Humidity ' + res1.list[34].main.humidity + '%');
 
-            var wind1 = ('Wind Speed ' + res.list[5].wind.speed + 'Mph')
-            var wind2 = ('Wind Speed ' + res.list[13].wind.speed + 'Mph')
-            var wind3 = ('Wind Speed ' + res.list[21].wind.speed + 'Mph')
-            var wind4 = ('Wind Speed ' + res.list[29].wind.speed + 'Mph')
-            var wind5 = ('Wind Speed ' + res.list[37].wind.speed + 'Mph')
+            var wind1 = ('Wind Speed ' + res1.list[2].wind.speed + 'Mph')
+            var wind2 = ('Wind Speed ' + res1.list[10].wind.speed + 'Mph')
+            var wind3 = ('Wind Speed ' + res1.list[18].wind.speed + 'Mph')
+            var wind4 = ('Wind Speed ' + res1.list[26].wind.speed + 'Mph')
+            var wind5 = ('Wind Speed ' + res1.list[34].wind.speed + 'Mph')
             // var windSpeed = (res.wind.speed);
             // console.log(tempDay1);
-            var icon1 = res.list[6].weather[0].icon;
-            var icon2 = res.list[14].weather[0].icon;
-            var icon3 = res.list[22].weather[0].icon;
-            var icon4 = res.list[30].weather[0].icon;
-            var icon5 = res.list[38].weather[0].icon;
+            var icon1 = res1.list[6].weather[0].icon;
+            var icon2 = res1.list[14].weather[0].icon;
+            var icon3 = res1.list[22].weather[0].icon;
+            var icon4 = res1.list[30].weather[0].icon;
+            var icon5 = res1.list[38].weather[0].icon;
 
             var weatherIcon1 = "http://openweathermap.org/img/wn/" + icon1 + "@2x.png"
             var weatherIcon2 = "http://openweathermap.org/img/wn/" + icon2 + "@2x.png"
@@ -69,7 +73,7 @@ $(document).ready(function () {
             var weatherIcon5 = "http://openweathermap.org/img/wn/" + icon5 + "@2x.png"
 
 
-            console.log(res);
+            console.log(res1);
 
 
             function weatherApp1() {
@@ -142,6 +146,8 @@ $(document).ready(function () {
         var city = $("#searchBar").val();
         console.log(city);
 
+
+
         var str = city.split(" ");
 
         for (var i = 0, x = str.length; i < x; i++) {
@@ -163,6 +169,14 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response);
             //// this is where the fun is ////
+            if (response.results.length == 0) {
+                console.log("no results")
+                //jquery to tell frontend that there are not results
+                $("#searchError").show();
+                $("#searchError").text("Try a bigger city xD")
+                return
+            }
+            $("#searchError").hide();
             makeHtml(response);
 
 
@@ -184,6 +198,7 @@ $(document).ready(function () {
     $("#searchBtn").on('click', function () {
         event.preventDefault();
         console.log('You clicked the submit button or enter')
+
         theSearch1();
         theSearch2();
 

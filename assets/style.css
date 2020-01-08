@@ -101,6 +101,13 @@ input:hover {
 button:hover{
     background-color: darkgrey;
 }
+#searchError {
+    background-color: red;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+}
 
 /* ********************LOCATION SECTION************************************ */
 
@@ -220,6 +227,9 @@ button:hover{
     float: left;
     border-radius: 20px;
     margin-left: 5px;
+}
+.changeMeDate {
+    font-size: 12px;
 }
 /* ********************** appended items when user clicks ****************************** */
 
