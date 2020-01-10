@@ -258,13 +258,8 @@ $(document).ready(function () {
         console.log('You clicked the submit button or enter')
         theSearch1();
         theSearch2();
-<<<<<<< HEAD
-        showDivs();
-
-
-=======
         theSearch3();
->>>>>>> d3d89fbb86814120c79f3dc25dc1eec09c7ca7c8
+        showDivs();
     });
 
     /////

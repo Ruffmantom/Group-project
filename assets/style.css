@@ -180,7 +180,8 @@ button:hover{
 }
 .getImage{
     width: 100%;
-    max-height: 275px;
+    /* max-height: 275px; */
+    overflow: hidden;
     margin: auto;
 }
 /******************************* WEATHER SECTION ****************************/
