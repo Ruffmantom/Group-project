@@ -22,6 +22,9 @@ function makeHtml(res) {
     locImage.attr('src', searchImg)
 
 }
+function hideDivs() {
+    // insert 
+}
 
 $(document).ready(function () {
     console.log('issss ready');
