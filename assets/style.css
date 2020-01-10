@@ -4,60 +4,48 @@ body{
     font-size: 20px;
     color: white;
 }
-
 html{
-
 }
-
 /* Fonts
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
-
 /* ********************** Nav Bar ****************************** */
-
-
 nav{
     display: flex;
-    flex-direction: column;
-    background-image: url('/assets/ddassets/navbar.png');
-    border: 15px solid whitesmoke;
-    height: 110px;
+    /* background-image: url('/assets/ddassets/navbar.png'); */
+    background: whitesmoke;
+    /* border: 15px solid whitesmoke; */
+    height: 130px;
+    width: 100%;
+    z-index: 100;
+    position: sticky;
     top: 0;
-    width: auto;
-
 }
-
+.navContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 .nav-logo {
     margin: 2px;
     height: 75px;
     margin: 0 auto;
-    padding-top: 5px;
+    /* padding-top: 5px; */
 }
-
 .navImage {
     display: flex;
-  
 }
-
-.navClock{
+/* .navClock{
     height: 5px;
-}
-
+} */
 #clock{
-    padding-top: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10px;
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: light;
 }
-
-
 /* ********************** Hero w/ logo ****************************** */
 .hero{
     /* margin-top: 110px; */
@@ -68,12 +56,10 @@ nav{
     border-bottom: 15px solid whitesmoke;
     display: flex;
   }
-
 #hero-logo{
     margin: auto;
     width:80%;
 }
-
 /* ********************** search section ****************************** */
 .serch-section{
     background-image: url("/assets/ddassets/light-landscape-nature-red-33041.jpg");
@@ -91,7 +77,6 @@ nav{
 .serch-container{
     margin: auto;
 }
-
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -119,7 +104,6 @@ input{
     color:white;
     opacity: 1;
     text-align: center;
-
   }
 button{
     color: white;
@@ -131,11 +115,9 @@ button{
     border-radius: 3px;
     border: none;
 }
-
 input:hover {
     background-color: darkgrey;
 }
-
 button:hover{
     background-color: darkgrey;
 }
@@ -147,9 +129,7 @@ button:hover{
     width: 35%;
     margin: 10px auto 10px auto;
 }
-
 /* ********************LOCATION SECTION************************************ */
-
 .location {
     background-image: url("/assets/ddassets/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg");
     background-position: center;
@@ -163,13 +143,11 @@ button:hover{
     border-bottom: 15px solid whitesmoke;
     text-align: center;
 }
-
 .locName {
     color: white;
     font-weight: bold;
     font-size: x-large;
 }
-
 .introText {
     color: white;
     font-weight: bold;
@@ -178,23 +156,32 @@ button:hover{
 }
 .locContainer{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.233);
+    background-color: #958258a4;
+    padding: 30px 0;
 }
 .intro{
     width: 40%;
     margin: auto;
-    
+}
+.locName{
+    margin-bottom: 15px;
+}
+.intro h3 {
+    color: white;
+}
+.intro p {
+    color: white;
 }
 .imageSpot{
     width: 40% ;
     margin: auto;
-    
+    display: flex;
 }
 .getImage{
     width: 100%;
     max-height: 275px;
+    margin: auto;
 }
-
 /******************************* WEATHER SECTION ****************************/
 .weather {
     background-image: url("/assets/ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
@@ -209,11 +196,9 @@ button:hover{
     border-bottom: 15px solid whitesmoke;
     text-align: center      
 }
-
 #weatherText {
     color: white;
 }
-
 #weatherContainer {
     height: 60%;
     width: 80%;
@@ -264,9 +249,6 @@ button:hover{
     color: black;
 }
 /* ********************** appended items when user clicks ****************************** */
-
-
-
 /* ********************** footer ****************************** */
 footer{
     height: 110px;
@@ -274,13 +256,10 @@ footer{
     display: flex;
     flex-direction: column;   
 }
-
 .footer-logo{
     margin: auto;
-    
 }
 .foot-logo{
     height: 75px;
 }
-
 /* ********************** mobile ****************************** */
