@@ -241,7 +241,7 @@ button:hover{
     height: 100%;
     width: 18%;
     float: left;
-    border-radius: 20px;
+    border-radius: 3px;
     margin-left: 45px;
 }
 #weatherBox2 {
@@ -249,7 +249,7 @@ button:hover{
     height: 100%;
     width: 18%;
     float: left;
-    border-radius: 20px;
+    border-radius: 3px;
     margin-left: 5px;
 }
 #weatherBox3 {
@@ -257,7 +257,7 @@ button:hover{
     height: 100%;
     width: 18%;
     float: left;
-    border-radius: 20px;
+    border-radius: 3px;
     margin-left: 5px;
 }
 #weatherBox4 {
@@ -265,7 +265,7 @@ button:hover{
     height: 100%;
     width: 18%;
     float: left;
-    border-radius: 20px;
+    border-radius: 3px;
     margin-left: 5px;
 }
 #weatherBox5 {
@@ -273,12 +273,20 @@ button:hover{
     height: 100%;
     width: 18%;
     float: left;
-    border-radius: 20px;
+    border-radius: 3px;
     margin-left: 5px;
 }
 .changeMeDate {
-    font-size: 12px;
+    font-size: 15px;
     color: black;
+    font-weight: 450;
+}
+.changeMe1 {
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 /* ********************** appended items when user clicks ****************************** */
 
