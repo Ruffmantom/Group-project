@@ -190,11 +190,12 @@ $(document).ready(function () {
                 //jquery to tell frontend that there are not results
                 $("#searchError").show();
                 // $("#searchError").text("Try a bigger city xD")
+                hideDivs();
                 return
             }
             $("#searchError").hide();
             makeHtml(response);
-
+            showDivs();
 
         });
 
@@ -235,7 +236,7 @@ $(document).ready(function () {
             function appendName2() {
                 $(".attName2").empty();
                 $(".attName2").append(response.results[1].name);
-                
+
             }
             function appendSnip1() {
                 $(".attSnippet1").empty();
