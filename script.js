@@ -220,12 +220,6 @@ $(document).ready(function () {
     ///////                                 /////////
     ////// THE ON CLICK OR ENTER BUTTON FUNCTIONS  /////
 
-
-
-
-
-
-
 })
 
 moment().format('MMMM Do YYYY, h:mm:ss a');
