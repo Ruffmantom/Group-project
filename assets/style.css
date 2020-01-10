@@ -18,6 +18,7 @@ nav{
     /* border: 15px solid whitesmoke; */
     height: 130px;
     width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
     z-index: 100;
     position: sticky;
     top: 0;
