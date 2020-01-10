@@ -22,9 +22,16 @@ function makeHtml(res) {
     locImage.attr('src', searchImg)
 
 }
-function hideDivs() {
-    // insert 
+function showDivs() {
+    $('.location').show();
+    $('.weather').show();
 }
+function hideDivs() {
+    $('.location').hide();
+    $('.weather').hide();
+}
+// hiding divs on load up
+hideDivs();
 
 $(document).ready(function () {
     console.log('issss ready');
@@ -90,7 +97,7 @@ $(document).ready(function () {
                 $("#weatherBox1").append("<h1 class='changeMeDate'>" + date1 + "</h1>");
                 $("#weatherBox1").append("<img class='imgChange' src='" + weatherIcon1 + "'>");
                 $("#weatherBox1").append("<p class='changeMe1'>" + "Temp: " + temp1 + "</p>");
-                $("#weatherBox1").append("<p class='changeMe1'>" +  humid1 + "</p>");
+                $("#weatherBox1").append("<p class='changeMe1'>" + humid1 + "</p>");
                 $("#weatherBox1").append("<p class='changeMe1'>" + wind1 + "</p>");
             }
             function weatherApp2() {
@@ -207,9 +214,10 @@ $(document).ready(function () {
     $("#searchBtn").on('click', function () {
         event.preventDefault();
         console.log('You clicked the submit button or enter')
-
         theSearch1();
         theSearch2();
+        showDivs();
+
 
     });
 
