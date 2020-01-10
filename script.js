@@ -225,18 +225,30 @@ $(document).ready(function () {
             }
 
         }).then(function (response) {
-            console.log(response);
-            // function appendName() {
-            //     $("#weatherBox1").empty();
+            // console.log(response.results[0].name);
+            // console.log(response.results[0].snippet);
+            function appendName1() {
+                $(".attName1").empty();
+                $(".attName1").append(response.results[0].name);
+            }
 
-            //     $("#weatherBox1").append("<h1 class='changeMeDate'>" + date1 + "</h1>");
-            //     $("#weatherBox1").append("<img class='imgChange' src='" + weatherIcon1 + "'>");
-            //     $("#weatherBox1").append("<p class='changeMe1'>" + "Temp: " + temp1 + "</p>");
-            //     $("#weatherBox1").append("<p class='changeMe1'>" +  humid1 + "</p>");
-            //     $("#weatherBox1").append("<p class='changeMe1'>" + wind1 + "</p>");
-            // }
+            function appendName2() {
+                $(".attName2").empty();
+                $(".attName2").append(response.results[1].name);
 
-
+            }
+            function appendSnip1() {
+                $(".attSnippet1").empty();
+                $(".attSnippet1").append(response.results[0].snippet);
+            }
+            function appendSnip2() {
+                $(".attSnippet2").empty();
+                $(".attSnippet2").append(response.results[1].snippet);
+            }
+            appendName1();
+            appendName2();
+            appendSnip1();
+            appendSnip2();
         });
 
 
