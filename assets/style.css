@@ -2,20 +2,14 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    
     color: white;
 }
-
 html{
-
-
 }
-
 /* Fonts
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
-
 /* ********************** Nav Bar ****************************** */
 nav{
     display: flex;
@@ -26,30 +20,26 @@ nav{
     width: 100%;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
     z-index: 100;
+    position: sticky;
+    top: 0;
 }
 .navContainer{
     margin: auto;
     display: flex;
     flex-direction: column;
-
 }
-
 .nav-logo {
     margin: 2px;
     height: 75px;
     margin: 0 auto;
     /* padding-top: 5px; */
 }
-
 .navImage {
     display: flex;
-  
 }
-
 /* .navClock{
     height: 5px;
 } */
-
 #clock{
     margin-top: 10px;
     color: black;
@@ -57,8 +47,6 @@ nav{
     font-size: 15px;
     font-weight: light;
 }
-
-
 /* ********************** Hero w/ logo ****************************** */
 .hero{
     /* margin-top: 110px; */
@@ -69,12 +57,10 @@ nav{
     border-bottom: 15px solid whitesmoke;
     display: flex;
   }
-
 #hero-logo{
     margin: auto;
     width:80%;
 }
-
 /* ********************** search section ****************************** */
 .serch-section{
     background-image: url("/assets/ddassets/light-landscape-nature-red-33041.jpg");
@@ -92,7 +78,6 @@ nav{
 .serch-container{
     margin: auto;
 }
-
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -120,7 +105,6 @@ input{
     color:white;
     opacity: 1;
     text-align: center;
-
   }
 button{
     color: white;
@@ -132,11 +116,9 @@ button{
     border-radius: 3px;
     border: none;
 }
-
 input:hover {
     background-color: darkgrey;
 }
-
 button:hover{
     background-color: darkgrey;
 }
@@ -148,9 +130,7 @@ button:hover{
     width: 35%;
     margin: 10px auto 10px auto;
 }
-
 /* ********************LOCATION SECTION************************************ */
-
 .location {
     background-image: url("/assets/ddassets/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg");
     background-position: center;
@@ -164,13 +144,11 @@ button:hover{
     border-bottom: 15px solid whitesmoke;
     text-align: center;
 }
-
 .locName {
     color: white;
     font-weight: bold;
     font-size: x-large;
 }
-
 .introText {
     color: white;
     font-weight: bold;
@@ -181,18 +159,13 @@ button:hover{
     display: flex;
     background-color: #000000cc;
     padding: 30px 0;
-    
-
 }
 .intro{
     width: 40%;
     margin: auto;
-    
-    
 }
 .locName{
     margin-bottom: 15px;
-
 }
 .intro h3 {
     color: white;
@@ -204,14 +177,12 @@ button:hover{
     width: 40% ;
     margin: auto;
     display: flex;
-    
 }
 .getImage{
     width: 100%;
     max-height: 275px;
     margin: auto;
 }
-
 /******************************* WEATHER SECTION ****************************/
 .weather {
     background-image: url("/assets/ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
@@ -226,11 +197,9 @@ button:hover{
     border-bottom: 15px solid whitesmoke;
     text-align: center      
 }
-
 #weatherText {
     color: white;
 }
-
 #weatherContainer {
     height: 60%;
     width: 80%;
@@ -281,9 +250,6 @@ button:hover{
     color: black;
 }
 /* ********************** appended items when user clicks ****************************** */
-
-
-
 /* ********************** footer ****************************** */
 footer{
     height: 110px;
@@ -291,13 +257,10 @@ footer{
     display: flex;
     flex-direction: column;   
 }
-
 .footer-logo{
     margin: auto;
-    
 }
 .foot-logo{
     height: 75px;
 }
-
 /* ********************** mobile ****************************** */
