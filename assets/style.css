@@ -19,18 +19,26 @@ font-family: 'Raleway', sans-serif;
 /* ********************** Nav Bar ****************************** */
 nav{
     display: flex;
+    /* background-image: url('/assets/ddassets/navbar.png'); */
+    background: whitesmoke;
+    /* border: 15px solid whitesmoke; */
+    height: 130px;
+    width: 100%;
+    box-shadow: 0px 5px #000000;
+    z-index: 100;
+}
+.navContainer{
+    margin: auto;
+    display: flex;
     flex-direction: column;
-    background-image: url('/assets/ddassets/navbar.png');
-    border: 15px solid whitesmoke;
-    height: 110px;
-    width: auto;
+
 }
 
 .nav-logo {
     margin: 2px;
     height: 75px;
     margin: 0 auto;
-    padding-top: 5px;
+    /* padding-top: 5px; */
 }
 
 .navImage {
@@ -38,21 +46,16 @@ nav{
   
 }
 
-.navClock{
+/* .navClock{
     height: 5px;
-}
+} */
 
 #clock{
-    padding-top: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10px;
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: light;
 }
 
 
@@ -176,21 +179,37 @@ button:hover{
 }
 .locContainer{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.233);
+    background-color: #958258a4;
+    padding: 30px 0;
+    
+
 }
 .intro{
     width: 40%;
     margin: auto;
     
+    
+}
+.locName{
+    margin-bottom: 15px;
+
+}
+.intro h3 {
+    color: white;
+}
+.intro p {
+    color: white;
 }
 .imageSpot{
     width: 40% ;
     margin: auto;
+    display: flex;
     
 }
 .getImage{
     width: 100%;
     max-height: 275px;
+    margin: auto;
 }
 
 /******************************* WEATHER SECTION ****************************/
