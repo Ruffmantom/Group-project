@@ -24,7 +24,7 @@ nav{
     /* border: 15px solid whitesmoke; */
     height: 130px;
     width: 100%;
-    box-shadow: 0px 5px #000000;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
     z-index: 100;
 }
 .navContainer{
@@ -179,7 +179,7 @@ button:hover{
 }
 .locContainer{
     display: flex;
-    background-color: #958258a4;
+    background-color: #000000cc;
     padding: 30px 0;
     
 
