@@ -245,12 +245,12 @@ $(document).ready(function () {
             // console.log(response.results[0].snippet);
             function appendName1() {
                 $(".attName1").empty();
-                $(".attName1").append(response.results[0].name);
+                $(".attName1").append("- " + response.results[0].name);
             }
 
             function appendName2() {
                 $(".attName2").empty();
-                $(".attName2").append(response.results[1].name);
+                $(".attName2").append("- " + response.results[1].name);
 
             }
             function appendSnip1() {
