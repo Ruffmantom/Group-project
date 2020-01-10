@@ -196,9 +196,51 @@ $(document).ready(function () {
             makeHtml(response);
 
 
-        })
-    };
+        });
 
+
+    };
+    function theSearch3() {
+        var city = $("#searchBar").val();
+        console.log(city);
+
+
+
+        var str = city.split(" ");
+
+        for (var i = 0, x = str.length; i < x; i++) {
+            str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+        }
+        var result = str.join("_");
+        console.log(result);
+
+        var queryURL = "https://www.triposo.com/api/20190906/poi.json?location_id=" + result + "&fields=name,snippet,location_id";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET",
+            headers: {
+                "X-Triposo-Account": "AZJ7DF38",
+                "X-Triposo-Token": "a6qzxiu56n8m4r4cec4prnmdpqck6jj0"
+            }
+
+        }).then(function (response) {
+            console.log(response);
+            // function appendName() {
+            //     $("#weatherBox1").empty();
+
+            //     $("#weatherBox1").append("<h1 class='changeMeDate'>" + date1 + "</h1>");
+            //     $("#weatherBox1").append("<img class='imgChange' src='" + weatherIcon1 + "'>");
+            //     $("#weatherBox1").append("<p class='changeMe1'>" + "Temp: " + temp1 + "</p>");
+            //     $("#weatherBox1").append("<p class='changeMe1'>" +  humid1 + "</p>");
+            //     $("#weatherBox1").append("<p class='changeMe1'>" + wind1 + "</p>");
+            // }
+
+
+        });
+
+
+    };
     //// "X-Triposo-Account": "AZJ7DF38" ////
     //// "X-Triposo-Token": "a6qzxiu56n8m4r4cec4prnmdpqck6jj0" ////
     /////// search for attractions ///////
@@ -216,9 +258,13 @@ $(document).ready(function () {
         console.log('You clicked the submit button or enter')
         theSearch1();
         theSearch2();
+<<<<<<< HEAD
         showDivs();
 
 
+=======
+        theSearch3();
+>>>>>>> d3d89fbb86814120c79f3dc25dc1eec09c7ca7c8
     });
 
     /////
