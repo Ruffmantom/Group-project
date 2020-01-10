@@ -3,6 +3,7 @@ $("#searchError").hide();
 var introText = $(".introText");
 var locName = $('.locName');
 var locImage = $('.getImage');
+var weatherTitle = $('#weatherText');
 
 window.onscroll = function () { scrollFunction() };
 
@@ -35,6 +36,8 @@ function makeHtml(res) {
     // console.log(res.results[0].images[Math.floor(Math.random()) * 10].source_url)
     var searchImg = res.results[0].images[Math.floor(Math.random() * 10) + 1].source_url;
     locImage.attr('src', searchImg)
+    // adding name of searched location to the title
+    weatherTitle.text('The 5 day Forecast in ' + res.results[0].name)
 
 }
 function showDivs() {
@@ -299,7 +302,7 @@ $(document).ready(function () {
 
 })
 
-moment().format('MMMM Do YYYY, h:mm:ss a');
+// moment().format('MMMM Do YYYY, h:mm:ss a');
 
 // On scroll
 
