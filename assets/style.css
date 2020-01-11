@@ -240,11 +240,11 @@ button:hover{
     height: 100%;
     width: 40% ;
     /* margin: auto; */
-    display: flex;
+    /* display: flex; */
 }
 .getImage{
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
 }
 @media only screen and (max-width: 600px){
     .intro{
@@ -253,7 +253,7 @@ button:hover{
     }
     .imageSpot{
         margin-top: 20px;
-        height: 100%;
+        height: auto;
         width: 100% ;
        
     }
