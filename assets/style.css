@@ -65,7 +65,7 @@ nav{
 .hero{
     /* margin-top: 110px; */
     height: 510px;
-    background-image: url('/assets/ddassets/landing.png');
+    background-image: url('assets/ddassets/landing.png');
     border-right: 15px solid  whitesmoke;
     border-left: 15px solid  whitesmoke;
     border-bottom: 15px solid whitesmoke;
@@ -82,7 +82,7 @@ nav{
 }
 /* ********************** search section ****************************** */
 .serch-section{
-    background-image: url("/assets/ddassets/light-landscape-nature-red-33041.jpg");
+    background-image: url("assets/ddassets/light-landscape-nature-red-33041.jpg");
     background-position: center;
     background-size: cover;
     height: 450px;
@@ -169,7 +169,7 @@ button:hover{
 }
 /* ********************LOCATION SECTION************************************ */
 .location {
-    background-image: url("/assets/ddassets/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg");
+    background-image: url("assets/ddassets/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg");
     background-position: center;
     background-size: cover;
     background-color: whitesmoke;
@@ -257,7 +257,7 @@ button:hover{
 }
 /******************************* WEATHER SECTION ****************************/
 .weather {
-    background-image: url("/assets/ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
+    background-image: url("assets/ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
     background-position: center;
     background-size: cover;
     height: 100%;
