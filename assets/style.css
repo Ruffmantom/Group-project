@@ -245,7 +245,7 @@ button:hover{
 }
 @media only screen and (max-width: 600px){
     .intro{
-        margin: auto;
+        /* margin: auto; */
         width: 95%;
     }
     .imageSpot{
