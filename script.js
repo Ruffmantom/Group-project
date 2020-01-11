@@ -17,7 +17,7 @@ function scrollFunction() {
     } else {
         $(".nav").css("height", "130px");
         $(".nav-logo").css("height", "75px");
-        $("#clock").css("font-size", "20px");
+        $("#clock").css("font-size", "15px");
 
     }
 }
