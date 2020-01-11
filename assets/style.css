@@ -59,7 +59,9 @@ nav{
     #clock{
         font-size: 12px !important;
     }
-
+    .navImg{
+        width: auto;
+    }
 
 }
 /* ********************** Hero w/ logo ****************************** */
