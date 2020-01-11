@@ -101,6 +101,12 @@ h4{
     margin: 25px 0;
     color: white;
 }
+#mainSub {
+    text-shadow: black 1px 2px;
+}
+#descSub {
+    text-shadow: black 1px 2px;
+}
 input{
     color: white;
     background-color:#41cbcc;
@@ -159,6 +165,10 @@ button:hover{
     color: white;
     font-weight: bold;
     font-size: x-large;
+}
+#locationText {
+    color: white;
+    text-shadow: black 1px 2px;
 }
 .introText {
     color: white;
@@ -227,6 +237,7 @@ button:hover{
 }
 #weatherText {
     color: white;
+    text-shadow: black 1px 2px;
 }
 #weatherContainer {
     height: 60%;
