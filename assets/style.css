@@ -17,7 +17,7 @@ nav{
     /* border: 15px solid whitesmoke; */
     height: 130px;
     width: 100%;
-    padding: 5px 0px;
+    padding: 10px 0px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
     z-index: 100;
     position: sticky;
@@ -50,7 +50,7 @@ nav{
     margin-top: 10px;
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: light;
     height: 100%;
 }
@@ -80,6 +80,7 @@ nav{
     border-left: 15px solid  whitesmoke;
     border-bottom: 15px solid whitesmoke;
     text-align: center;
+    padding: 0 20px;
     /* background-color: chartreuse; */
 }
 .serch-container{
@@ -231,60 +232,37 @@ button:hover{
     height: 60%;
     width: 80%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-#weatherBox1 {
+.weatherBoxs{
     background-color: #51d1cfd8;
     height: 100%;
     width: 18%;
-    float: left;
     border-radius: 3px;
-    margin-left: 45px;
-}
-#weatherBox2 {
-    background-color: #51d1cfd8;
-    height: 100%;
-    width: 18%;
-    float: left;
-    border-radius: 3px;
-    margin-left: 5px;
-}
-#weatherBox3 {
-    background-color: #51d1cfd8;
-    height: 100%;
-    width: 18%;
-    float: left;
-    border-radius: 3px;
-    margin-left: 5px;
-}
-#weatherBox4 {
-    background-color: #51d1cfd8;
-    height: 100%;
-    width: 18%;
-    float: left;
-    border-radius: 3px;
-    margin-left: 5px;
-}
-#weatherBox5 {
-    background-color: #51d1cfd8;
-    height: 100%;
-    width: 18%;
-    float: left;
-    border-radius: 3px;
-    margin-left: 5px;
+    padding: 5px;
+    
 }
 .changeMeDate {
     font-size: 15px;
     color: black;
     font-weight: 450;
+    margin: 10px
 }
 .changeMe1 {
     font-size: 15px;
     color: black;
     text-align: left;
-    margin-left: 20px;
-    margin-top: 10px;
 }
-/* ********************** appended items when user clicks ****************************** */
+/* ***************************** scaling down for mobile ********************************** */
+@media only screen and (max-width: 1138px){
+
+
+
+}
+
+
 /* ********************** footer ****************************** */
 footer{
     height: 110px;

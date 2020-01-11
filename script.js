@@ -8,15 +8,15 @@ var weatherTitle = $('#weatherText');
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
         $(".nav").css("height", "100%");
         $(".nav-logo").css("height", "50px");
-        $("#clock").css("font-size", "10px");
+        $("#clock").css("font-size", "15px");
 
     } else {
-        $(".nav").css("height", "100%");
+        $(".nav").css("height", "130px");
         $(".nav-logo").css("height", "75px");
-        $("#clock").css("font-size", "15px");
+        $("#clock").css("font-size", "20px");
     }
 }
 
@@ -50,6 +50,8 @@ function hideDivs() {
 }
 // hiding divs on load up
 hideDivs();
+
+
 
 $(document).ready(function () {
     console.log('issss ready');
