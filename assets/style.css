@@ -54,6 +54,13 @@ nav{
     font-weight: light;
     height: 100%;
 }
+@media only screen and (max-width: 600px){
+    #clock{
+        font-size: 12px;
+    }
+
+
+}
 /* ********************** Hero w/ logo ****************************** */
 .hero{
     /* margin-top: 110px; */
@@ -63,6 +70,11 @@ nav{
     border-left: 15px solid  whitesmoke;
     border-bottom: 15px solid whitesmoke;
     display: flex;
+  }
+  @media only screen and (max-width: 600px){
+      .hero{
+          height: 300px;
+      }
   }
 #hero-logo{
     margin: auto;
@@ -102,15 +114,23 @@ h4{
     color: white;
 }
 input{
-    color: white;
-    background-color:#41cbcc;
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    width: 35%;
-    height: 40px;
-    border: none;
-    border-radius: 3px;
+    color: white !important;
+    background-color:#41cbcc !important;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 25px !important;
+    text-align: center !important;
+    width: 35% !important;
+    height: 40px !important;
+    border: none !important;
+    border-radius: 3px !important;
+}
+@media only screen and (max-width: 600px){
+    input{
+        width: 95% !important;
+    }
+    button{
+        width: 95% !important;
+    }
 }
 ::placeholder {
     color:white;
@@ -128,7 +148,7 @@ button{
     border: none;
 }
 input:hover {
-    background-color: darkgrey;
+    background-color: darkgrey !important;
 }
 button:hover{
     background-color: darkgrey;
@@ -154,6 +174,7 @@ button:hover{
     border-left: 15px solid  whitesmoke;
     border-bottom: 15px solid whitesmoke;
     text-align: center;
+    padding-bottom: 30px;
 }
 .locName {
     color: white;
@@ -216,7 +237,7 @@ button:hover{
     background-image: url("/assets/ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
     background-position: center;
     background-size: cover;
-    height: 450px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -237,13 +258,19 @@ button:hover{
     flex-wrap: wrap;
 }
 .weatherBoxs{
+    margin: 0 0 15px 0 !important;
     background-color: #51d1cfd8;
     height: 100%;
     width: 18%;
     border-radius: 3px;
-    padding: 5px;
+    padding: 10px !important;
     
 }
+.weatherBoxs p{
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .changeMeDate {
     font-size: 15px;
     color: black;
@@ -255,13 +282,6 @@ button:hover{
     color: black;
     text-align: left;
 }
-/* ***************************** scaling down for mobile ********************************** */
-@media only screen and (max-width: 1138px){
-
-
-
-}
-
 
 /* ********************** footer ****************************** */
 footer{
