@@ -11,12 +11,14 @@ function scrollFunction() {
     if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
         $(".nav").css("height", "100%");
         $(".nav-logo").css("height", "50px");
-        $("#clock").css("font-size", "15px");
+        $(".nav-logo").css("width", "auto");
+        $("#clock").css("font-size", "12px");
 
     } else {
         $(".nav").css("height", "130px");
         $(".nav-logo").css("height", "75px");
-        $("#clock").css("font-size", "20px");
+        $("#clock").css("font-size", "15px");
+
     }
 }
 

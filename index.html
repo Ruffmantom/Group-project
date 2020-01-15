@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway&display=swap"
         rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
     <title>Dream Destination - Home</title>
@@ -18,7 +18,7 @@
     <nav class="nav">
         <div class="navContainer">
             <div class="navImage">
-                <a class="nav-logo" href="#"><img src="/assets/ddassets/navLogo.png" alt="DD logo"></a>
+                <a class="nav-logo" href="#"><img class="navImg" src="assets/ddassets/navLogo.png" alt="DD logo"></a>
             </div>
 
             <div class="navClock">
@@ -29,17 +29,18 @@
 
     </nav>
     <!-- Hero section -->
-    <div class="container">
+    <div class="fullContainer">
 
         <div class="hero">
-            <img id="hero-logo" src="/assets/ddassets/landingLogo.png" alt="dd logo">
+            <img id="hero-logo" src="assets/ddassets/landingLogo.png" alt="dd logo">
         </div>
 
         <div class="serch-section">
             <div class="serch-container">
 
                 <h1 id="mainSub">Your Dream Destination Awaits</h1>
-                <h4 id="descSub">Type in the area you would like to explore, see what attractions are arround and the current
+                <h4 id="descSub">Type in the area you would like to explore, see what attractions are arround and the
+                    current
                     forecast
                     in
                     the area</h4>
@@ -56,8 +57,8 @@
         <!-- two divs for appending to when the user searches for a city, town or state -->
         <div class="location">
             <h1 id="locationText">Your Search Location</h1>
-            <div class="locContainer">
-                <div class="intro">
+            <div class="locContainer row">
+                <div class="intro col l6 s12">
                     <h3 class="locName"></h3>
                     <p class="introText"></p>
                     <h3 class="attractions"> Attractions</h3>
@@ -71,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="imageSpot">
+                <div class="imageSpot col l6 s12">
                     <img class="getImage" alt="">
 
                 </div>
@@ -82,22 +83,22 @@
 
         <div class="weather">
             <h1 id="weatherText"></h1>
-            <div id="weatherContainer">
+            <div class="row" id="weatherContainer">
 
                 <!-- this will be filled in with JS -->
-                <div class="weatherBoxs" id="weatherBox1">
+                <div class="weatherBoxs col l2 m5 s11" id="weatherBox1">
 
                 </div>
-                <div class="weatherBoxs" id="weatherBox2">
+                <div class="weatherBoxs col l2 m5 s11" id="weatherBox2">
 
                 </div>
-                <div class="weatherBoxs" id="weatherBox3">
+                <div class="weatherBoxs col l2 m5 s11" id="weatherBox3">
 
                 </div>
-                <div class="weatherBoxs" id="weatherBox4">
+                <div class="weatherBoxs col l2 m5 s11" id="weatherBox4">
 
                 </div>
-                <div class="weatherBoxs" id="weatherBox5">
+                <div class="weatherBoxs col l2 m5 s11" id="weatherBox5">
 
                 </div>
             </div>
@@ -106,7 +107,7 @@
 
     <!-- Footer below -->
     <footer>
-        <a class="footer-logo" href="#"><img class="foot-logo" src="/assets/ddassets/footerLogo.png" alt="DD logo"></a>
+        <a class="footer-logo" href="#"><img class="foot-logo" src="assets/ddassets/footerLogo.png" alt="DD logo"></a>
     </footer>
 
 

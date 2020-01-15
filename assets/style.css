@@ -37,6 +37,7 @@ nav{
 
 .nav-logo img {
     height: 100%;
+    width: auto;
 }
 
 
@@ -50,19 +51,33 @@ nav{
     margin-top: 10px;
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: light;
     height: 100%;
+}
+@media only screen and (max-width: 600px){
+    #clock{
+        font-size: 12px !important;
+    }
+    .navImg{
+        width: auto;
+    }
+
 }
 /* ********************** Hero w/ logo ****************************** */
 .hero{
     /* margin-top: 110px; */
     height: 510px;
-    background-image: url('/assets/ddassets/landing.png');
+    background-image: url('ddassets/landing.png');
     border-right: 15px solid  whitesmoke;
     border-left: 15px solid  whitesmoke;
     border-bottom: 15px solid whitesmoke;
     display: flex;
+  }
+  @media only screen and (max-width: 600px){
+      .hero{
+          height: 300px;
+      }
   }
 #hero-logo{
     margin: auto;
@@ -70,7 +85,7 @@ nav{
 }
 /* ********************** search section ****************************** */
 .serch-section{
-    background-image: url("/assets/ddassets/light-landscape-nature-red-33041.jpg");
+    background-image: url("ddassets/light-landscape-nature-red-33041.jpg");
     background-position: center;
     background-size: cover;
     height: 450px;
@@ -108,15 +123,23 @@ h4{
     text-shadow: black 1px 2px;
 }
 input{
-    color: white;
-    background-color:#41cbcc;
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    width: 35%;
-    height: 40px;
-    border: none;
-    border-radius: 3px;
+    color: white !important;
+    background-color:#41cbcc !important;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 25px !important;
+    text-align: center !important;
+    width: 35% !important;
+    height: 40px !important;
+    border: none !important;
+    border-radius: 3px !important;
+}
+@media only screen and (max-width: 600px){
+    input{
+        width: 95% !important;
+    }
+    button{
+        width: 95% !important;
+    }
 }
 ::placeholder {
     color:white;
@@ -134,7 +157,7 @@ button{
     border: none;
 }
 input:hover {
-    background-color: darkgrey;
+    background-color: darkgrey !important;
 }
 button:hover{
     background-color: darkgrey;
@@ -149,7 +172,7 @@ button:hover{
 }
 /* ********************LOCATION SECTION************************************ */
 .location {
-    background-image: url("/assets/ddassets/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg");
+    background-image: url("ddassets/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg");
     background-position: center;
     background-size: cover;
     background-color: whitesmoke;
@@ -160,6 +183,7 @@ button:hover{
     border-left: 15px solid  whitesmoke;
     border-bottom: 15px solid whitesmoke;
     text-align: center;
+    padding-bottom: 30px;
 }
 .locName {
     color: white;
@@ -191,15 +215,17 @@ button:hover{
 }
 .locContainer{
     height: 100%;
-    display: flex;
+    /* display: flex; */
     background-color: #000000cc;
     padding: 30px 0;
 }
+
 .intro{
     text-align: initial;
     width: 40%;
-    margin: auto;
+    /* margin: auto; */
 }
+
 .locName{
     margin-bottom: 15px;
 }
@@ -213,20 +239,31 @@ button:hover{
 .imageSpot{
     height: 100%;
     width: 40% ;
-    margin: auto;
-    display: flex;
+    /* margin: auto; */
+    /* display: flex; */
 }
 .getImage{
     width: 100%;
-    /* width: auto; */
-    margin: auto;
+    /* margin: auto; */
+}
+@media only screen and (max-width: 600px){
+    .intro{
+        /* margin: auto; */
+        width: 95%;
+    }
+    .imageSpot{
+        margin-top: 20px;
+        height: auto;
+        width: 100% ;
+       
+    }
 }
 /******************************* WEATHER SECTION ****************************/
 .weather {
-    background-image: url("/assets/ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
+    background-image: url("ddassets/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg");
     background-position: center;
     background-size: cover;
-    height: 450px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -248,13 +285,19 @@ button:hover{
     flex-wrap: wrap;
 }
 .weatherBoxs{
+    margin: 0 0 15px 0 !important;
     background-color: #51d1cfd8;
     height: 100%;
     width: 18%;
     border-radius: 3px;
-    padding: 5px;
+    padding: 10px !important;
     
 }
+.weatherBoxs p{
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .changeMeDate {
     font-size: 15px;
     color: black;
@@ -266,13 +309,6 @@ button:hover{
     color: black;
     text-align: left;
 }
-/* ***************************** scaling down for mobile ********************************** */
-@media only screen and (max-width: 1138px){
-
-
-
-}
-
 
 /* ********************** footer ****************************** */
 footer{
