@@ -309,6 +309,9 @@ button:hover{
     color: black;
     text-align: left;
 }
+.row:after{
+    content: none;
+}
 
 /* ********************** footer ****************************** */
 footer{
